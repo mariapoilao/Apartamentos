@@ -111,6 +111,21 @@ public class Registrar extends AppCompatActivity {
         }
     }
 
+    public void limpiar(){
+        cajaNomenclatura.setText("");
+        cajaTamaño.setText("");
+        cajaPrecio.setText("");
+        chkSombra.setChecked(false);
+        chkBalcon.setChecked(false);
+
+        cajaNomenclatura.requestFocus();
+
+    }
+
+    public void limpiar(View v){
+        limpiar();
+    }
+
 
 }
 

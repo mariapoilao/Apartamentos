@@ -35,7 +35,7 @@ public class Reportes extends AppCompatActivity {
         a= Datos.caracteristica(getApplicationContext());
         if (a>=0){
 
-            Toast.makeText(getApplicationContext(), this.getResources().getString(R.string.mensaje1)+a,
+            Toast.makeText(getApplicationContext(), this.getResources().getString(R.string.mensaje1)+" "+a,
                     Toast.LENGTH_SHORT).show();
         }
 
@@ -49,7 +49,7 @@ public class Reportes extends AppCompatActivity {
 
         if(a!=null){
 
-            Toast.makeText(getApplicationContext(), this.getResources().getString(R.string.mensaje2)+a,
+            Toast.makeText(getApplicationContext(), this.getResources().getString(R.string.mensaje2)+" "+a,
                     Toast.LENGTH_SHORT).show();
 
         }
@@ -66,8 +66,29 @@ public class Reportes extends AppCompatActivity {
 
         if(a!=null){
 
-            Toast.makeText(getApplicationContext(), this.getResources().getString(R.string.mensaje3)+a,
+            Toast.makeText(getApplicationContext(), this.getResources().getString(R.string.mensaje3)+" "+a,
                     Toast.LENGTH_SHORT).show();
+
+        }
+
+    }
+
+    public void ReporteCuatro(View v){
+
+        ArrayList<Apartamento> apartamentos;
+
+        apartamentos=Datos.traerApartamentos(getApplicationContext());
+
+        int suma=0, cont=0, aux;
+
+
+        for (int i = 0; i < apartamentos.size(); i++) {
+            aux=Integer.parseInt(apartamentos.get(i).getTamaño());
+
+            if (apartamentos.get(i).getPiso().equals(this.getResources().getString(R.string.piso1))){
+                cont++;
+                suma =(aux+cont)/aux;
+            }
 
         }
 

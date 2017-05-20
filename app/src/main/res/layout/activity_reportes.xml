@@ -32,7 +32,7 @@
                     android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="2.62"
                     android:onClick="reporteUno"
                     android:text="@string/reporte1" />
 
@@ -40,25 +40,32 @@
                     android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="3.50"
                     android:onClick="reporteDos"
                     android:text="@string/reporte2" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/button2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="173dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:onClick="ReporteTres"
                     android:text="@string/reporte3" />
 
                 <Button
                     android:id="@+id/button"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="@string/reporte4" />
+
             </LinearLayout>
+
         </LinearLayout>
     </HorizontalScrollView>
 </android.support.constraint.ConstraintLayout>
