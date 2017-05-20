@@ -73,26 +73,7 @@ public class Reportes extends AppCompatActivity {
 
     }
 
-    public void ReporteCuatro(View v){
 
-        ArrayList<Apartamento> apartamentos;
-
-        apartamentos=Datos.traerApartamentos(getApplicationContext());
-
-        int suma=0, cont=0, aux;
-
-
-        for (int i = 0; i < apartamentos.size(); i++) {
-            aux=Integer.parseInt(apartamentos.get(i).getTamaño());
-
-            if (apartamentos.get(i).getPiso().equals(this.getResources().getString(R.string.piso1))){
-                cont++;
-                suma =(aux+cont)/aux;
-            }
-
-        }
-
-    }
 
 
 
