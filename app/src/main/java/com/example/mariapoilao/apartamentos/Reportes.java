@@ -74,6 +74,10 @@ public class Reportes extends AppCompatActivity {
     }
 
 
+    public void lanzar(View view) {
+        Intent i = new Intent(this, ReportePromedio.class );
+        startActivity(i);
+    }
 
 
 

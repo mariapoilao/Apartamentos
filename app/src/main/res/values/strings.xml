@@ -50,5 +50,10 @@
         <item>@string/reporte5</item>
     </string-array>
     <string name="reporte2">Mayor Precio</string>
+    <string name="promPiso1">Promedio Piso 1</string>
+    <string name="promPiso2">Promedio Piso 2</string>
+    <string name="promPiso3">Promedio Piso 3</string>
+    <string name="promPiso4">Promedio Piso 4</string>
+    <string name="promPiso5">Promedio Piso 5</string>
 
 </resources>
