@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Apartamentos</string>
+    <string name="titulo">REGISTRAR APARTAMENTO</string>
+    <string name="nomenclatura">Nomenclatura</string>
+    <string name="tamano">Tamaño</string>
+    <string name="precio">Precio</string>
+    <string name="piso">Piso</string>
+    <string name="caracteristicas">Caracteristicas</string>
+    <string name="sombra">Sombra</string>
+    <string name="balcon">Balcon</string>
+    <string name="guardar">Guardar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="registrar">Registrar</string>
+    <string name="listado">Listado de Apartamentos</string>
+    <string name="reportes">Reportes</string>
+    <string name="error_nomenclatura">Error: Favor ingresar una nomenclatura</string>
+    <string name="error_tamano">Favor ingresar el tamaño</string>
+    <string name="error_precio">Favor ingresar el precio</string>
+    <string name="piso1">Piso 1</string>
+    <string name="piso2">Piso 2</string>
+    <string name="piso3">Piso 3</string>
+    <string name="piso4">Piso 4</string>
+    <string name="piso5">Piso 5</string>
+    <string name="numero">Nº</string>
+    <string name="reporte1">Reporte 1</string>
+    <string name="reporte2">Reporte 2</string>
+    <string name="reporte3">Reporte 3</string>
+    <string name="reporte4">Reporte 4</string>
+    <string name="reporte5">Reporte 5</string>
+    <string-array name="opciones">
+        <item>@string/registrar</item>
+        <item>@string/listado</item>
+        <item>@string/reportes</item>
+    </string-array>
+    <string-array name="opcionesPiso">
+        <item>@string/piso1</item>
+        <item>@string/piso2</item>
+        <item>@string/piso3</item>
+        <item>@string/piso4</item>
+        <item>@string/piso5</item>
+    </string-array>
+    <string-array name="opcionesReportes">
+        <item>@string/reporte1</item>
+        <item>@string/reporte2</item>
+        <item>@string/reporte3</item>
+        <item>@string/reporte4</item>
+        <item>@string/reporte5</item>
+    </string-array>
+</resources>
