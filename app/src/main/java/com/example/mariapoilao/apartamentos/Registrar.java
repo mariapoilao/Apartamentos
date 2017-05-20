@@ -65,7 +65,7 @@ public class Registrar extends AppCompatActivity {
 
 
     public void guardar(View v){
-        String nomenclatura,tamaño,precio,piso="",caracterisitca="";
+        String nomenclatura,tamaño,precio,piso="",caracterisitca=" ";
         int op;
         Apartamento a;
 
@@ -100,11 +100,11 @@ public class Registrar extends AppCompatActivity {
             }
 
 
-            caracterisitca = caracterisitca.substring(0,caracterisitca.length()-2);
+            caracterisitca = caracterisitca.substring(0,caracterisitca.length());
             a = new Apartamento(nomenclatura,tamaño,precio,piso,caracterisitca);
             a.guardar(getApplicationContext());
 
-            Toast.makeText(getApplicationContext(), "Apartamento Guardado Exitosamente",
+            Toast.makeText(getApplicationContext(), this.getResources().getString(R.string.guardado),
                     Toast.LENGTH_SHORT).show();
 
 

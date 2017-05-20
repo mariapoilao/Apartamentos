@@ -27,6 +27,10 @@
     <string name="reporte3">Reporte 3</string>
     <string name="reporte4">Reporte 4</string>
     <string name="reporte5">Reporte 5</string>
+    <string name="guardado">¡Apartamento guardado exitosamente!</string>
+    <string name="mensaje1">Los apartamentos que tienen Balcon y sombra son </string>
+    <string name="mensaje2">El apartamento más caro esta en el</string>
+    <string name="mensaje3">El apartamento con mayor tamaño es el de nomenclatura</string>
     <string-array name="opciones">
         <item>@string/registrar</item>
         <item>@string/listado</item>
@@ -46,4 +50,5 @@
         <item>@string/reporte4</item>
         <item>@string/reporte5</item>
     </string-array>
+
 </resources>

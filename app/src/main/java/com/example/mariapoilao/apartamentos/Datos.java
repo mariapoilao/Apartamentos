@@ -19,7 +19,7 @@ public class Datos {
         String sql, nomenclatura, tamaño, precio, piso, caracteristica;
         Apartamento a;
 
-        ApartamentosSQLiteOpenHelper aux = new ApartamentosSQLiteOpenHelper(contexto,"DBApartamentos",null,1);
+        ApartamentosSQLiteOpenHelper aux = new ApartamentosSQLiteOpenHelper(contexto,"DBApartamentos",null,2);
         db = aux.getReadableDatabase();
 
         sql ="select * from Apartamentos";
@@ -50,7 +50,7 @@ public class Datos {
         SQLiteDatabase db;
         String  sql;
 
-        ApartamentosSQLiteOpenHelper aux = new ApartamentosSQLiteOpenHelper(contexto,"DBApartamentos",null,1);
+        ApartamentosSQLiteOpenHelper aux = new ApartamentosSQLiteOpenHelper(contexto,"DBApartamentos",null,2);
         db = aux.getReadableDatabase();
 
         sql ="select * from Apartamentos where nomenclatura ='"+nome+"'";
@@ -65,4 +65,58 @@ public class Datos {
 
 
     }
+
+
+    public static  int caracteristica(Context contexto) {
+
+        SQLiteDatabase db;
+        String  sql;
+        int cont=0;
+
+        ApartamentosSQLiteOpenHelper aux = new ApartamentosSQLiteOpenHelper(contexto,"DBApartamentos",null,2);
+        db = aux.getReadableDatabase();
+
+        sql ="select * from Apartamentos where caracteristica = 'Balcon, Sombra'";
+        Cursor c = db.rawQuery(sql,null);
+        cont = c.getCount();
+        db.close();
+        return cont;
+
+    }
+
+    public static  String mayor(Context contexto) {
+
+        SQLiteDatabase db;
+        String  sql, piso;
+
+
+        ApartamentosSQLiteOpenHelper aux = new ApartamentosSQLiteOpenHelper(contexto,"DBApartamentos",null,2);
+        db = aux.getReadableDatabase();
+
+        sql ="SELECT * FROM Apartamentos ORDER BY precio DESC LIMIT 1";
+        Cursor c = db.rawQuery(sql,null);
+        c.moveToFirst();
+        piso=c.getString(3);
+        db.close();
+
+        return piso;
+    }
+
+    public static  String tamano(Context contexto) {
+
+        SQLiteDatabase db;
+        String  sql, nome;
+
+
+        ApartamentosSQLiteOpenHelper aux = new ApartamentosSQLiteOpenHelper(contexto,"DBApartamentos",null,2);
+        db = aux.getReadableDatabase();
+
+        sql ="SELECT * FROM Apartamentos ORDER BY tamaño DESC LIMIT 1";
+        Cursor c = db.rawQuery(sql,null);
+        c.moveToFirst();
+        nome=c.getString(0);
+        db.close();
+        return nome;
+    }
+
 }

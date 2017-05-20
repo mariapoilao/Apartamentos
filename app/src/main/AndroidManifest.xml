@@ -19,7 +19,6 @@
         <activity android:name=".Registrar" />
         <activity android:name=".Listado" />
         <activity android:name=".Reportes" />
-        <activity android:name=".ReporteUno"></activity>
     </application>
 
 </manifest>
