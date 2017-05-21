@@ -32,4 +32,10 @@
     <string name="sombra">Shadow</string>
     <string name="tamano">Size</string>
     <string name="titulo">APARTMENT REGISTER</string>
+    <string name="mostrar">Show</string>
+    <string name="promPiso1">"First Floor Average "</string>
+    <string name="promPiso2">Second Floor Average</string>
+    <string name="promPiso3">Third Floor Average</string>
+    <string name="promPiso4">Fourth Floor Average</string>
+    <string name="promPiso5">Fifth Floor Average</string>
 </resources>
